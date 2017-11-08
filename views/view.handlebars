@@ -1,0 +1,17 @@
+{{#each users}}
+<div class="jumbotron">
+   {{#each this}}
+  <p><span id="this">Firstname:</span>     {{this.fname}}</p>
+    <p><span id="this">Lastname: </span>    {{this.lname}}</p>
+    <p><span id="this">Email:     </span>{{this.email}}</p>
+    <p><span id="this">Address:   </span>  {{this.address}}</p>
+    <p><span id="this">Number:    </span> {{this.mobile}}</p>    
+  <a href="user/{{this._id}}">Delete</a><span> | </span>
+    <a href="update/{{this._id}}">Update</a>
+    {{/each}}
+    
+    
+  </div>  
+    
+{{/each}}
+
